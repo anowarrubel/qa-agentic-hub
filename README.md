@@ -1,5 +1,7 @@
 # qa-agentic-hub
 
+[![CI](https://github.com/anowarrubel/qa-agentic-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/anowarrubel/qa-agentic-hub/actions/workflows/ci.yml)
+
 Research + design for a **central agentic-QA hub** that serves many independent projects:
 a QA-engineer agent checks out the latest code, analyzes it, then generates and runs tests
 of every type - functional automation, security, analytics, performance, SEO, accessibility
