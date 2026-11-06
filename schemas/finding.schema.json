@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Normalized finding",
+  "type": "object",
+  "required": ["capability", "severity", "status", "title", "location", "evidence", "artifact", "sha", "verdict"],
+  "additionalProperties": false,
+  "properties": {
+    "capability": { "type": "string" },
+    "severity": { "enum": ["critical", "high", "medium", "low", "info"] },
+    "status": { "enum": ["failed", "flaky", "known-issue", "known-issue-fixed"] },
+    "title": { "type": "string", "minLength": 1 },
+    "location": { "type": "string" },
+    "evidence": { "type": "string" },
+    "artifact": { "type": "string" },
+    "sha": { "type": "string", "minLength": 7 },
+    "verdict": { "enum": ["confirmed", "plausible"] },
+    "suggestedFix": { "type": "string" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "playwright-framework",
+  "repos": [
+    {
+      "slug": "anowarrubel/playwright-framework",
+      "url": "https://github.com/anowarrubel/playwright-framework.git",
+      "base": "main"
+    }
+  ],
+  "environments": {
+    "qa": { "readOnly": true, "env": { "TEST_ENV": "qa" } },
+    "prod": { "readOnly": true, "env": { "TEST_ENV": "prod" } }
+  },
+  "capabilities": {
+    "security": { "tool": "playwright", "suite": "tests/security", "project": "chromium", "needsBrowser": false },
+    "api": { "tool": "playwright", "suite": "tests/api", "project": "chromium", "needsBrowser": false },
+    "seo": { "tool": "playwright", "suite": "tests/seo", "project": "chromium", "needsBrowser": true },
+    "accessibility": { "tool": "playwright", "suite": "tests/accessibility", "project": "chromium", "needsBrowser": true }
+  }
+}

@@ -1,0 +1,8 @@
+# Checked-out project code + run artifacts (never versioned in this repo)
+projects/*/workspace/
+projects/*/artifacts/
+*.local.*
+
+# Node / tooling
+node_modules/
+.DS_Store
